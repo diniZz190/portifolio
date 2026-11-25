@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Arthur Diniz Silveira, estudante de Engenharia de Software e desenvolvedor em formação.">
+  <meta name="theme-color" content="#0b0e16">
+  <title>Início | Arthur Diniz Silveira</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a class="marca" href="index.html" aria-label="Arthur Diniz — página inicial">ADS<span>.</span></a>
+
+      <nav class="navegacao" id="menu-principal" aria-label="Menu principal">
+          <a href="index.html" class="ativo" aria-current="page">Início</a>
+          <a href="sobre.html">Sobre mim</a>
+          <a href="projetos.html">Projetos</a>
+          <a href="contato.html">Contato</a>
+      </nav>
+
+      <div class="acoes-cabecalho">
+        <button class="botao-menu" id="botao-menu" type="button" aria-label="Abrir menu" aria-controls="menu-principal" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero secao">
+      <div class="container hero-grid">
+        <div class="hero-texto animar-entrada">
+          <p class="sobretitulo"><span class="ponto-status"></span> Olá, seja bem-vindo ao meu portfólio!</p>
+          <h1>Eu sou <span class="texto-destaque">Arthur Diniz Silveira</span><span class="ponto-final">.</span></h1>
+          <p class="hero-cargo">Estudante de Engenharia de Software <span class="barra">/</span> Desenvolvedor em formação</p>
+          <p class="texto-intro">Gosto de transformar ideias em projetos e aprender novas tecnologias. Estou desenvolvendo minhas habilidades em programação com foco em back-end e desenvolvimento full stack.</p>
+          <div class="grupo-botoes">
+            <a class="botao botao-primario" href="projetos.html">Explorar projetos <span aria-hidden="true">↗</span></a>
+            <a class="botao botao-secundario" href="contato.html">Entrar em contato</a>
+          </div>
+          <div class="hero-redes" aria-label="Meus perfis profissionais">
+            <span>Encontre-me:</span>
+            <a href="https://github.com/SEU-USUARIO" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/SEU-PERFIL/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          </div>
+        </div>
+        <div class="hero-visual animar-entrada">
+          <div class="circulo-fundo" aria-hidden="true"></div>
+          <figure class="moldura-foto">
+            <img src=".//DAN_9706.JPG" alt="Imagem ilustrativa temporária do perfil de Arthur Diniz Silveira" width="430" height="480">
+          </figure>
+          <div class="etiqueta-flutuante etiqueta-codigo"><span aria-hidden="true">&lt;/&gt;</span> Em constante evolução</div>
+          <div class="etiqueta-flutuante etiqueta-java"><span aria-hidden="true">●</span> Java • JavaScript</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao faixa-dados" aria-label="Minha formação e interesses">
+      <div class="container grade-dados">
+        <div class="dado"><span class="dado-icone" aria-hidden="true">◈</span><div><strong>Engenharia de Software</strong><span>Graduação na UniFil</span></div></div>
+        <div class="dado"><span class="dado-icone" aria-hidden="true">⌘</span><div><strong>Técnico em Desenvolvimento de Sistemas</strong><span>Formação técnica concluída</span></div></div>
+        <div class="dado"><span class="dado-icone" aria-hidden="true">{ }</span><div><strong>Programação</strong><span>Back-end e full stack</span></div></div>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-sobre-resumo">
+      <div class="container duas-colunas">
+        <div>
+          <p class="rotulo-secao">01 / Um pouco sobre mim</p>
+          <h2 id="titulo-sobre-resumo" class="titulo-secao">Tecnologia, curiosidade e <span class="texto-destaque">vontade de criar.</span></h2>
+        </div>
+        <div>
+          <p class="paragrafo">Sou estudante de Engenharia de Software na UniFil e tenho formação técnica em Desenvolvimento de Sistemas. Gosto de aprender na prática, enfrentando desafios e criando soluções que façam sentido.</p>
+          <p class="paragrafo">Atualmente estou aprofundando meus estudos em lógica de programação, Java, JavaScript e desenvolvimento de aplicações.</p>
+          <a class="link-seta" href="sobre.html">Conheça minha trajetória <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-alternativa" aria-labelledby="titulo-projetos-destaque">
+      <div class="container">
+        <div class="cabecalho-secao">
+          <div><p class="rotulo-secao">02 / Na prática</p><h2 id="titulo-projetos-destaque" class="titulo-secao">Alguns dos meus <span class="texto-destaque">projetos.</span></h2></div>
+          <a class="link-seta" href="projetos.html">Ver todos <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="grade-projetos">
+          <article class="cartao-projeto">
+            <div class="projeto-arte arte-livraria"><span class="arte-simbolo" aria-hidden="true">📚</span><span class="arte-legenda">LIVRARIA WEB</span></div>
+            <div class="projeto-conteudo"><span class="categoria-projeto">Desenvolvimento web</span><h3>Livraria Web</h3><p>Aplicação com cadastro e gerenciamento de livros, busca e armazenamento local.</p><div class="etiquetas"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+          </article>
+          <article class="cartao-projeto">
+            <div class="projeto-arte arte-hardware"><span class="arte-simbolo" aria-hidden="true">⌨</span><span class="arte-legenda">HARDCOREBIT</span></div>
+            <div class="projeto-conteudo"><span class="categoria-projeto">Desenvolvimento web</span><h3>HARDCoreBit</h3><p>Protótipo de loja de hardware com catálogo, categorias e carrinho de compras.</p><div class="etiquetas"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+          </article>
+          <article class="cartao-projeto">
+            <div class="projeto-arte arte-contratos"><span class="arte-simbolo" aria-hidden="true">▤</span><span class="arte-legenda">CONTRACTGUARD</span></div>
+            <div class="projeto-conteudo"><span class="categoria-projeto">Protótipo de sistema</span><h3>ContractGuard</h3><p>Proposta de plataforma para comparar versões de contratos e apoiar a análise de alterações.</p><div class="etiquetas"><span>Sistemas</span><span>Front-end</span><span>Back-end</span></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container chamada-final">
+        <div><p class="rotulo-secao">03 / Próximo passo</p><h2>Vamos trocar uma ideia sobre <span class="texto-destaque">tecnologia?</span></h2><p>Estou sempre aberto a conhecer projetos, pessoas e novas oportunidades de aprendizado.</p></div>
+        <a class="botao botao-primario" href="contato.html">Vamos conversar <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <div>
+        <a class="marca marca-rodape" href="index.html">ADS<span>.</span></a>
+        <p>Aprendendo, construindo e evoluindo na tecnologia.</p>
+      </div>
+      <div class="rodape-links" aria-label="Redes sociais">
+        <a href="https://github.com/diniZz190" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/arthur-diniz-silveira-3a9aa7359/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+    <div class="container rodape-base">© <span class="ano-atual">2026</span> Arthur Diniz Silveira. Feito com HTML, CSS e JavaScript.</div>
+  </footer>
+</body>
+</html>

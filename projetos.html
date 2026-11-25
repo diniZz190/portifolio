@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projetos de desenvolvimento web, sistemas e Java de Arthur Diniz Silveira.">
+  <meta name="theme-color" content="#0b0e16">
+  <title>Projetos | Arthur Diniz Silveira</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a class="marca" href="index.html" aria-label="Arthur Diniz — página inicial">ADS<span>.</span></a>
+
+      <nav class="navegacao" id="menu-principal" aria-label="Menu principal">
+          <a href="index.html">Início</a>
+          <a href="sobre.html">Sobre mim</a>
+          <a href="projetos.html" class="ativo" aria-current="page">Projetos</a>
+          <a href="contato.html">Contato</a>
+      </nav>
+
+      <div class="acoes-cabecalho">
+        <button class="botao-menu" id="botao-menu" type="button" aria-label="Abrir menu" aria-controls="menu-principal" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="secao topo-pagina">
+      <div class="container">
+        <p class="rotulo-secao">02 / Portfólio de projetos</p>
+        <h1 class="titulo-pagina">Ideias que viraram <span class="texto-destaque">projetos.</span></h1>
+        <p class="subtitulo-pagina">Uma seleção de atividades acadêmicas e protótipos desenvolvidos durante meu aprendizado.</p>
+      </div>
+    </section>
+
+    <section class="secao secao-projetos-lista" aria-labelledby="titulo-lista-projetos">
+      <div class="container">
+        <div class="topo-filtros">
+          <h2 id="titulo-lista-projetos" class="titulo-lista">Meus trabalhos</h2>
+          <div class="filtros" role="group" aria-label="Filtrar projetos por categoria">
+            <button type="button" class="filtro ativo" data-filtro="todos" aria-pressed="true">Todos</button>
+            <button type="button" class="filtro" data-filtro="web" aria-pressed="false">Web</button>
+            <button type="button" class="filtro" data-filtro="sistemas" aria-pressed="false">Sistemas</button>
+            <button type="button" class="filtro" data-filtro="java" aria-pressed="false">Java</button>
+          </div>
+        </div>
+        <p id="resultado-filtro" class="resultado-filtro" aria-live="polite">5 projetos encontrados.</p>
+        <div class="grade-projetos">
+          <article class="cartao-projeto" data-categoria="web">
+            <div class="projeto-arte arte-livraria"><span class="arte-simbolo" aria-hidden="true">📚</span><span class="arte-legenda">LIVRARIA WEB</span></div>
+            <div class="projeto-conteudo"><span class="categoria-projeto">Web • Projeto acadêmico</span><h3>Livraria Web</h3><p>Página para cadastrar, pesquisar, editar e excluir livros, utilizando o armazenamento do navegador.</p><div class="etiquetas"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>localStorage</span></div></div>
+          </article>
+          <article class="cartao-projeto" data-categoria="web">
+            <div class="projeto-arte arte-hardware"><span class="arte-simbolo" aria-hidden="true">⌨</span><span class="arte-legenda">HARDCOREBIT</span></div>
+            <div class="projeto-conteudo"><span class="categoria-projeto">Web • Loja virtual</span><h3>HARDCoreBit</h3><p>Interface de e-commerce com componentes de catálogo, páginas por categoria e carrinho de compras.</p><div class="etiquetas"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+          </article>
+          <article class="cartao-projeto" data-categoria="sistemas">
+            <div class="projeto-arte arte-contratos"><span class="arte-simbolo" aria-hidden="true">▤</span><span class="arte-legenda">CONTRACTGUARD</span></div>
+            <div class="projeto-conteudo"><span class="categoria-projeto">Sistemas • Protótipo</span><h3>ContractGuard</h3><p>Protótipo para organizar contratos, comparar versões de documentos e apoiar fluxos de aprovação.</p><div class="etiquetas"><span>Requisitos</span><span>Front-end</span><span>Back-end</span></div></div>
+          </article>
+          <article class="cartao-projeto" data-categoria="java">
+            <div class="projeto-arte arte-java"><span class="arte-simbolo" aria-hidden="true">☕</span><span class="arte-legenda">CURSOS EM JAVA</span></div>
+            <div class="projeto-conteudo"><span class="categoria-projeto">Java • Atividade acadêmica</span><h3>Cadastro de Cursos</h3><p>Aplicação de console para cadastrar cursos EAD e presenciais com classes, herança, enums e coleções.</p><div class="etiquetas"><span>Java</span><span>POO</span><span>Collections</span></div></div>
+          </article>
+          <article class="cartao-projeto" data-categoria="sistemas web">
+            <div class="projeto-arte arte-montador"><span class="arte-simbolo" aria-hidden="true">▣</span><span class="arte-legenda">MONTE SEU PC</span></div>
+            <div class="projeto-conteudo"><span class="categoria-projeto">Web • Protótipo</span><h3>Monte seu PC</h3><p>Experiência de seleção de componentes de computador com foco em compatibilidade e montagem.</p><div class="etiquetas"><span>JavaScript</span><span>Hardware</span><span>Interface</span></div></div>
+          </article>
+        </div>
+        <div class="observacao-projetos"><p><strong>Em desenvolvimento:</strong> este portfólio apresenta meus estudos e protótipos. Os repositórios específicos poderão ser adicionados conforme forem publicados.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <div>
+        <a class="marca marca-rodape" href="index.html">ADS<span>.</span></a>
+        <p>Aprendendo, construindo e evoluindo na tecnologia.</p>
+      </div>
+      <div class="rodape-links" aria-label="Redes sociais">
+        <a href="https://github.com/SEU-USUARIO" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/SEU-PERFIL/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+    <div class="container rodape-base">© <span class="ano-atual">2026</span> Arthur Diniz Silveira. Feito com HTML, CSS e JavaScript.</div>
+  </footer>
+</body>
+</html>
